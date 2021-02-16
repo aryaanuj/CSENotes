@@ -104,11 +104,11 @@ $category = $_GET['cat'];
                     </div>
                     <div class="col-md-3 text-left"> 
                         <a href="index.php#about" class="btn btn-sm btn-primary btn-rounded">Popular Categories</a>
-                        <a href="" class="btn btn-sm btn-primary btn-rounded">Library</a> 
+                        <a href="library.php" class="btn btn-sm btn-primary btn-rounded">Library</a> 
                     </div>
                 </div>
                 <div class="row p-lg-4">
-                    <article class="main-content col-md-12 pr-lg-5" id="article">
+                    <article class="main-content col-md-12 pr-lg-5 text-justify" id="article">
                         <?php
                         $result = getCurrentPost($category);
                         $counter = 0;
@@ -131,24 +131,6 @@ $category = $_GET['cat'];
                         }
                         ?>
                     </article>
-                   <!--  <aside class="col-md-3 d-none d-md-block border-left">
-                        <div class="widget widget-support-forum p-md-3 p-sm-2"> <span class="icon icon-forum"></span>
-                            <h4>Looking for help? Join Community</h4>
-                            <p>Couldn’t find what your are looking for ? Why not join out support forums and let us help you.</p> <a href="#" class="btn btn-light">Support Forum</a> </div>
-                            <hr class="my-5">
-                            <ul class="aside-nav nav flex-column">
-                                <li class="nav-item"> <a data-scroll="" class="nav-link text-dark" href="#section-1">Typography</a> </li>
-                                <li class="nav-item"> <a data-scroll="" class="nav-link text-dark" href="#section-2">Colors</a> </li>
-                                <li class="nav-item"> <a data-scroll="" class="nav-link text-dark" href="#section-3">File Tree</a> </li>
-                                <li class="nav-item"> <a data-scroll="" class="nav-link text-dark" href="#section-4">Table</a> </li>
-                                <li class="nav-item"> <a data-scroll="" class="nav-link text-dark" href="#section-5">Accordion</a> </li>
-                                <li class="nav-item"> <a data-scroll="" class="nav-link text-dark" href="#section-6">Video</a> </li>
-                                <li class="nav-item"> <a data-scroll="" class="nav-link text-dark" href="#section-7">Code</a> </li>
-                                <li class="nav-item"> <a data-scroll="" class="nav-link text-dark" href="#section-8">Alert</a> </li>
-                                <li class="nav-item"> <a data-scroll="" class="nav-link text-dark" href="#section-9">List</a> </li>
-                                <li class="nav-item"> <a data-scroll="" class="nav-link text-dark" href="#section-10">Carousel</a> </li>
-                            </ul>
-                        </aside> -->
                     </div>
                 </div>
             </main>

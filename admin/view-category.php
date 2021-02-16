@@ -1,6 +1,12 @@
 <?php
 require_once("check_login.php");
 require_once('database/database_connection.php');
+$msg = '';
+if(isset($_GET['available'])){
+  if($_GET['available']==1){
+    $msg ='<p class="alert alert-danger" style="border-left:10px solid red;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong><i class="fa fa-times text-danger"></i> </strong>Posts exist related to this category, if you want to delete this category, you have to delete all posts related to this category first.</p>';
+  }
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +34,7 @@ require_once('database/database_connection.php');
     <!-- header -->
     <?php include_once('include/header.php'); ?>
     <!-- header end -->
-
+  <div class="msg"><?= $msg ?></div>
     <!-- breadcrumb -->
     <div class="breadcrumbs">
       <div class="breadcrumbs-inner">
